@@ -1,0 +1,14 @@
+2023-07-25T02:22:34.928Z +12840ms [debug] Config loaded {"version":"2.22.5","cdkVersion":"2.84.0","constructsVersion":"10.1.156","config":{"name":"seek-my-salary-refactored","region":"us-east-1","stage":"sethmatthews","ssmPrefix":"/sst/seek-my-salary-refactored/sethmatthews/"},"metafile":{"inputs":{"sst.config.ts":{"bytes":229,"imports":[{"path":"sst","kind":"import-statement","external":true},{"path":"sst/constructs","kind":"import-statement","external":true}],"format":"esm"}},"outputs":{".sst.config.1690251742449.mjs":{"imports":[],"exports":["default"],"entryPoint":"sst.config.ts","inputs":{"sst.config.ts":{"bytesInOutput":140}},"bytes":322}}},"paths":{"config":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored/sst.config.ts","root":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored","out":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored/.sst","artifacts":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored/.sst/artifacts"}}
+2023-07-25T02:22:36.493Z  +1565ms [debug] Using AWS profile 
+2023-07-25T02:22:36.981Z   +488ms [debug] Created AWS client IoTClient
+2023-07-25T02:22:36.981Z     +0ms [debug] Getting IoT endpoint
+2023-07-25T02:22:37.722Z   +741ms [debug] Using IoT endpoint: a3lq4g5xb5ab4j-ats.iot.us-east-1.amazonaws.com
+2023-07-25T02:22:37.722Z     +0ms [debug] Initializing bootstrap context
+2023-07-25T02:22:37.723Z     +1ms [debug] Created AWS client CloudFormationClient
+2023-07-25T02:22:38.780Z  +1057ms [debug] Loaded bootstrap status
+2023-07-25T02:22:38.780Z     +0ms [debug] Bootstrap context initialized {"status":"ready","version":"7.2","bucket":"sstbootstrap-useast124d14e4b-1cmm8wfzxx22u"}
+2023-07-25T02:22:38.781Z     +1ms [debug] Created AWS client S3Client
+2023-07-25T02:22:38.814Z    +33ms [debug] Fetching all metadata
+2023-07-25T02:22:39.851Z  +1037ms [debug] Fetched metadata from 0 stacks
+2023-07-25T02:22:39.854Z     +3ms [debug] Created AWS client SSMClient
+2023-07-25T02:22:40.088Z   +234ms [debug] IoT connected
