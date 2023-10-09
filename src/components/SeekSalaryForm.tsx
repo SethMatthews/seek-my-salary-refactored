@@ -7,9 +7,9 @@ import Image from 'next/image';
 const SeekSalaryForm = ({handleSubmit,handleInputChange}:{handleSubmit:(submitEvent: React.SyntheticEvent)=>void, handleInputChange:(submitEvent: React.SyntheticEvent)=>void}) => {
     return (  
         // flex flex-col items-center justify-start
-        <div className=' min-h-max w-full bg-sms-purple flex justify-center text-white'>
+        <div className=' min-h-max w-full bg-sms-purple flex justify-center text-white sms-radius'>
 
-            <div className=' w-11/12 lg:w-3/5 md:w-3/4 flex flex-col items-center justify-start gap-6 '>
+            <div className=' w-11/12 md:max-w-2xl flex flex-col items-center justify-start gap-10 '>
                 <div className='' >
                     <Image src={"/seekmysalarylogo.svg"} alt="" height={200} width={500} ></Image>
                 </div>
@@ -19,7 +19,7 @@ const SeekSalaryForm = ({handleSubmit,handleInputChange}:{handleSubmit:(submitEv
                     <button className='bg-sms-aqua py-3 rounded-xl text-sms-purple' >SEEK</button>
                     {/* <input id ="button" name="button" type="submit" value="SEEK"/> */}
                 </form>
-                <h2 className='flex justify-center text-center'>This tool is not connected with Seek Limited. Please note that the listed range entered by the employer may include super..</h2>
+                <h2 className='flex justify-center text-center pb-10'>This tool is not connected with Seek Limited. Please note that the listed range entered by the employer may include super..</h2>
             </div>
             
         </div>
