@@ -6,18 +6,26 @@ import SeekSalaryForm from "~/components/SeekSalaryForm";
 
 
 
+interface CreateUserResponse {
+  message: string;
+};
+
+
 export default function Home() {
 
 
   const [inputValue, setInputValue] = useState("");
 
-  const handleSubmit = (submitEvent: React.SyntheticEvent) => {
+  const handleSubmit = async (submitEvent: React.SyntheticEvent) => {
     console.log("Submitted");
     console.log(submitEvent);
     submitEvent.preventDefault();
     const e = submitEvent.target as HTMLFormElement;
     console.log("Submitted");
-    console.log("add are",e.add);
+    console.log("add are",e);
+    await login().then((value)=>{
+      console.log(value);
+    });
   }
   
   
@@ -28,6 +36,41 @@ export default function Home() {
     setInputValue(inputElement.value);
   
   }
+
+  const login = async () => {
+    try {
+      // 👇️ const response: Response
+      const response = await fetch('http://localhost:3000/api/seeksalary', {
+        method: 'POST',
+        body: JSON.stringify({
+          jobId: inputValue,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error! status: ${response.status}`);
+      }
+
+      // 👇️ const result: CreateUserResponse
+      const result = (await response.json()) as CreateUserResponse;
+
+      console.log('result is: ', JSON.stringify(result, null, 4));
+      return result;
+
+    } catch (error) {
+      if (error instanceof Error) {
+        console.log('error message: ', error.message);
+        return error.message;
+      } else {
+        console.log('unexpected error: ', error);
+        return 'An unexpected error occurred';
+      }
+    }
+  };
   
 
 

@@ -1,14 +1,14 @@
-2023-10-09T03:29:35.093Z   +577ms [debug] Config loaded {"version":"2.22.5","cdkVersion":"2.84.0","constructsVersion":"10.1.156","config":{"name":"seek-my-salary-refactored","region":"us-east-1","stage":"sethmatthews","ssmPrefix":"/sst/seek-my-salary-refactored/sethmatthews/"},"metafile":{"inputs":{"sst.config.ts":{"bytes":229,"imports":[{"path":"sst","kind":"import-statement","external":true},{"path":"sst/constructs","kind":"import-statement","external":true}],"format":"esm"}},"outputs":{".sst.config.1696822174899.mjs":{"imports":[],"exports":["default"],"entryPoint":"sst.config.ts","inputs":{"sst.config.ts":{"bytesInOutput":140}},"bytes":322}}},"paths":{"config":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored/sst.config.ts","root":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored","out":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored/.sst","artifacts":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored/.sst/artifacts"}}
-2023-10-09T03:29:36.535Z  +1442ms [debug] Using AWS profile 
-2023-10-09T03:29:36.615Z    +80ms [debug] Created AWS client IoTClient
-2023-10-09T03:29:36.615Z     +0ms [debug] Getting IoT endpoint
-2023-10-09T03:29:37.606Z   +991ms [debug] Using IoT endpoint: a3lq4g5xb5ab4j-ats.iot.us-east-1.amazonaws.com
-2023-10-09T03:29:37.606Z     +0ms [debug] Initializing bootstrap context
-2023-10-09T03:29:37.609Z     +3ms [debug] Created AWS client CloudFormationClient
-2023-10-09T03:29:38.697Z  +1088ms [debug] Loaded bootstrap status
-2023-10-09T03:29:38.697Z     +0ms [debug] Bootstrap context initialized {"status":"ready","version":"7.2","bucket":"sstbootstrap-useast124d14e4b-1cmm8wfzxx22u"}
-2023-10-09T03:29:38.700Z     +3ms [debug] Created AWS client S3Client
-2023-10-09T03:29:38.747Z    +47ms [debug] Fetching all metadata
-2023-10-09T03:29:39.841Z  +1094ms [debug] Fetched metadata from 0 stacks
-2023-10-09T03:29:39.844Z     +3ms [debug] Created AWS client SSMClient
-2023-10-09T03:29:40.139Z   +295ms [debug] IoT connected
+2023-10-26T01:48:22.894Z   +411ms [debug] Config loaded {"version":"2.22.5","cdkVersion":"2.84.0","constructsVersion":"10.1.156","config":{"name":"seek-my-salary-refactored","region":"us-east-1","stage":"sethmatthews","ssmPrefix":"/sst/seek-my-salary-refactored/sethmatthews/"},"metafile":{"inputs":{"sst.config.ts":{"bytes":229,"imports":[{"path":"sst","kind":"import-statement","external":true},{"path":"sst/constructs","kind":"import-statement","external":true}],"format":"esm"}},"outputs":{".sst.config.1698284902830.mjs":{"imports":[],"exports":["default"],"entryPoint":"sst.config.ts","inputs":{"sst.config.ts":{"bytesInOutput":140}},"bytes":322}}},"paths":{"config":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored/sst.config.ts","root":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored","out":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored/.sst","artifacts":"/Users/sethmatthews/Documents/github-repos/seekMySalaryRefactored/seek-my-salary-refactored/.sst/artifacts"}}
+2023-10-26T01:48:24.184Z  +1290ms [debug] Using AWS profile 
+2023-10-26T01:48:24.206Z    +22ms [debug] Created AWS client IoTClient
+2023-10-26T01:48:24.206Z     +0ms [debug] Getting IoT endpoint
+2023-10-26T01:48:25.286Z  +1080ms [debug] Using IoT endpoint: a3lq4g5xb5ab4j-ats.iot.us-east-1.amazonaws.com
+2023-10-26T01:48:25.286Z     +0ms [debug] Initializing bootstrap context
+2023-10-26T01:48:25.287Z     +1ms [debug] Created AWS client CloudFormationClient
+2023-10-26T01:48:26.693Z  +1406ms [debug] Loaded bootstrap status
+2023-10-26T01:48:26.693Z     +0ms [debug] Bootstrap context initialized {"status":"ready","version":"7.2","bucket":"sstbootstrap-useast124d14e4b-1cmm8wfzxx22u"}
+2023-10-26T01:48:26.694Z     +1ms [debug] Created AWS client S3Client
+2023-10-26T01:48:26.724Z    +30ms [debug] Fetching all metadata
+2023-10-26T01:48:27.920Z  +1196ms [debug] Fetched metadata from 0 stacks
+2023-10-26T01:48:27.926Z     +6ms [debug] Created AWS client SSMClient
+2023-10-26T01:48:28.107Z   +181ms [debug] IoT connected
