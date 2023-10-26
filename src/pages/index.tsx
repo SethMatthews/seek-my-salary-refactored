@@ -1,79 +1,10 @@
 import Head from "next/head";
-import { useState } from "react";
-// import Link from "next/link";
 import Footer from "~/components/Footer";
 import SeekSalaryForm from "~/components/SeekSalaryForm";
 
 
 
-interface CreateUserResponse {
-  message: string;
-};
-
-
 export default function Home() {
-
-
-  const [inputValue, setInputValue] = useState("");
-
-  const handleSubmit = async (submitEvent: React.SyntheticEvent) => {
-    console.log("Submitted");
-    console.log(submitEvent);
-    submitEvent.preventDefault();
-    const e = submitEvent.target as HTMLFormElement;
-    console.log("Submitted");
-    console.log("add are",e);
-    await login().then((value)=>{
-      console.log(value);
-    });
-  }
-  
-  
-  
-  const handleInputChange = (inputChangeEvent: React.SyntheticEvent) => {
-    const inputElement = inputChangeEvent.target as HTMLInputElement;
-    console.log("handleInputChange",inputElement.value);
-    setInputValue(inputElement.value);
-  
-  }
-
-  const login = async () => {
-    try {
-      // 👇️ const response: Response
-      const response = await fetch('http://localhost:3000/api/seeksalary', {
-        method: 'POST',
-        body: JSON.stringify({
-          jobId: inputValue,
-        }),
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-      });
-
-      if (!response.ok) {
-        throw new Error(`Error! status: ${response.status}`);
-      }
-
-      // 👇️ const result: CreateUserResponse
-      const result = (await response.json()) as CreateUserResponse;
-
-      console.log('result is: ', JSON.stringify(result, null, 4));
-      return result;
-
-    } catch (error) {
-      if (error instanceof Error) {
-        console.log('error message: ', error.message);
-        return error.message;
-      } else {
-        console.log('unexpected error: ', error);
-        return 'An unexpected error occurred';
-      }
-    }
-  };
-  
-
-
 
   return (
     <>
@@ -83,10 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <SeekSalaryForm handleSubmit={handleSubmit} handleInputChange={handleInputChange} />
-
-        <p>{inputValue}</p>
-
+        <SeekSalaryForm />
         <Footer/>
 
     
